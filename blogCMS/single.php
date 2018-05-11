@@ -70,40 +70,31 @@
 			  <blockquote>2 Comments</blockquote>
 				
 			  <div class="comment-area">
-				
-				<form>
-				  <div class="form-group">
-					<label for="exampleInputEmail1">Name</label>
-					<input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder="Name">
-				  </div>
-				  <div class="form-group">
-					<label for="exampleInputEmail1">Website</label>
-					<input type="text" name="website" class="form-control" id="exampleInputEmail1" placeholder="Website(Optional)">
-					<small id="emailHelp" class="form-text text-muted">Optional</small>
-				  </div>
+
+				<form>			  
+				<hr>	
 				  <div class="form-group">
 					<label for="exampleInputPassword1">Comment</label>
 					<textarea cols="60" rows="10" name="comment" class="form-control"></textarea>
 				  </div>
 				
 				  <button type="submit" name="post_comment" class="btn btn-primary">Post Comment</button>
-				</form>	
+
 				
-			  <br>
-			  <br>
-			  <hr>
-			  
+				<br>
+				<br>
 <!-- NOT finished, cant get imaage to inherite img css (wont float left) -->
-			  <div class="comment">
-				<div class="img">
-				<a href="#"> Basit ALtaf </a>
-				<img src="img\noimage.jpg" style="width:50px;height:50px;">
+				<div class="comment">
+					<div class="img">
+					<a href="#"> Basit ALtaf </a>
+					<img src="img\noimage.jpg" style="width:50px;height:50px;">
 				
-			    </div>
-				This is a commment by Basit Altaf.
-			  </div>
-			  <br>
-			  <br>
+					</div>
+					This is a commment by Basit Altaf.
+				</div>
+				<br>
+				<hr>
+				</form>	
 			  </div>
 					
         </div><!-- /.blog-main -->

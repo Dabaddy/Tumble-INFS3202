@@ -1,4 +1,20 @@
-<?php include("includes/header.php");?>
+<?php include("includes/header.php");
+
+//Check if there is a category in the url, if not 
+	if(isset($_GET['category'])){
+		$category = mysqli_real_escape_string($db, $_GET['category']);
+		echo "<h2>Category: " . $category . "</h2>";
+		$query = "SELECT * FROM posts WHERE category_id='$category'";
+		echo '<div>HIHIHI</div>';
+	}else{
+		$query = "SELECT * FROM posts";
+	}	
+	
+	
+	$posts = $db->query($query);
+
+
+?>
 
 
 	<div>
@@ -8,65 +24,40 @@
           <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
           <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
         </div>
-      </div
+      </div>
     </div>
 
     <main role="main" class="container">
-      <div class="row">
-        <div class="col-md-8 blog-main">
-          <h3 class="pb-3 mb-4 font-italic border-bottom">
-            From the Firehose
-          </h3>
+		<div>
+<!-- Grabs all variables of a post and references them to a variable 'rows' -->		
+		<?php if($posts->num_rows > 0) {
+			while($rows = $posts->fetch_assoc()){
+		?>
+<!-- Grab & Display Title, Date, Author & Body of the post -->
+<!-- Title of post links to a new page where you are able to read the whole post & with comment functionality -->		
+			<div class = "blog-post">
+				<h1 class = "blog-post-title"><a href="index.php?category=<?php echo $rows['category_id'] ?>"><?php echo $rows['title']; ?></a></h1>
+				<p class = "blog-post-meta"><?php echo $rows['date']; ?>, by <a href="#"><?php echo $rows['user_id']; ?></a></a></p>
+				<p class="mb-0">
+				
+<!-- Only displays the first 300 charecters of the body --> 				
+				<?php $body = $rows['body']; 
+					echo substr($body, 0, 300) . "...";				
+				?>
+				
+				<a href="<?php echo $rows['post_id'] ?>" class="btn btn-primary">Read More</a>
+				</p>
+			</div>
+	
+	
+ 
 
-          <div class="blog-post">
-            <h2 class="blog-post-title">Sample blog post</h2>
-            <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
-
-            <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
-            <hr>
-            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-            <blockquote>
-              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            </blockquote>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <h2>Heading</h2>
-            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-            <h3>Sub-heading</h3>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            <pre><code>Example code block</code></pre>
-            <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-            <h3>Sub-heading</h3>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <a href="#" class="btn btn-primary">Read More</a> 
-          </div><!-- /.blog-post -->
-
-          <div class="blog-post">
-            <h2 class="blog-post-title">Another blog post</h2>
-            <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
-
-            x<a href="#" class="btn btn-primary">Read More</a>
-		  </div><!-- /.blog-post -->
-
-          <div class="blog-post">
-            <h2 class="blog-post-title">New feature</h2>
-            <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
-
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <ul>
-              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-              <li>Donec id elit non mi porta gravida at eget metus.</li>
-              <li>Nulla vitae elit libero, a pharetra augue.</li>
-            </ul>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-		  <a href="#" class="btn btn-primary">Read More</a>
-          </div><!-- /.blog-post -->
-
-        </div><!-- /.blog-main -->
+		<?php } }
+			else {
+				echo '<div>ggjhghjgjh</div>';
+			}?>
 		
-
-		
-		<?php include("includes/sidebar.php");?>
 		<?php include("includes/footer.php");?>
+	    </div>
 	</main>
 </html>

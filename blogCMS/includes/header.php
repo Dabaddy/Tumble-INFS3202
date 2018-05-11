@@ -5,7 +5,7 @@
 	
 	$query = "SELECT * FROM categories";
 	
-	 $categories = $db->query($query);
+	$categories = $db->query($query);
 	
 	
 	
@@ -27,7 +27,7 @@
 
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-    <link href="blog.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
   </head>
 
   <body>
@@ -36,7 +36,7 @@
       <header class="blog-header py-3">
         <div class="row flex-nowrap justify-content-between align-items-center">
           <div class="col-4 pt-1">
-            <a class="text-muted" href="#">Subscribe</a>
+            <a class="blog-header-logo text-dark" href="home.php">Home</a>
           </div>
           <div class="col-4 text-center">
             <a class="blog-header-logo text-dark" href="index.php">Tumble</a>
@@ -59,7 +59,7 @@
 		  while($row = $categories->fetch_assoc()){
 		  ?>	 
 <!-- Echo the ID so post with the same categoryID get displayed on same page -->		  
-		  <a class="nav-scroller-item" href="index.php?category=<?php echo $row['id']; ?>"><?php echo $row['text']; ?></a>
+		  <a class="nav-scroller-item" href="index.php?category=<?php echo $row['category_id']; ?>"><?php echo $row['text']; ?></a>
 		  <?php }}?>
 		  
         </nav>
