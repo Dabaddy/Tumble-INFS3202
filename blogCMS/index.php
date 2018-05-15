@@ -27,6 +27,8 @@
       </div>
     </div>
 
+	
+	
     <main role="main" class="container">
 		<div>
 <!-- Grabs all variables of a post and references them to a variable 'rows' -->		
