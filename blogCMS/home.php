@@ -1,4 +1,4 @@
-<?php include("includes/header.php");
+<?php include("includes/header2.php");
 
 //Check if there is a category in the url, if not 
 	if(isset($_GET['category'])){
@@ -36,8 +36,8 @@
 <!-- Grab & Display Title, Date, Author & Body of the post -->
 <!-- Title of post links to a new page where you are able to read the whole post & with comment functionality -->		
 			<div class = "blog-post">
-				<h1 class = "blog-post-title"><a href="index.php?category=<?php echo $rows['category_id'] ?>"><?php echo $rows['title']; ?></a></h1>
-				<p class = "blog-post-meta"><?php echo $rows['date']; ?>, by <a href="#"><?php echo $rows['user_id']; ?></a></a></p>
+				<h1 class = "blog-post-title"><a href="login.php" ><?php echo $rows['title']; ?></a></h1>
+				<p class = "blog-post-meta"><?php echo $rows['date']; ?>, by <?php echo $rows['username']; ?></p>
 				<p class="mb-0">
 				
 <!-- Only displays the first 300 charecters of the body --> 				
@@ -45,7 +45,7 @@
 					echo substr($body, 0, 300) . "...";				
 				?>
 				
-				<a href="<?php echo $rows['post_id'] ?>" class="btn btn-primary">Read More</a>
+				<a href="login.php" class="btn btn-primary">Read More</a>
 				</p>
 			</div>
 			
