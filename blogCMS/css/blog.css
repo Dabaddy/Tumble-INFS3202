@@ -1,3 +1,112 @@
+
+/*MY CODE*/
+
+.main-wrapper {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.main-container {
+	padding-top: 40px;
+}
+
+.main-container h2 {
+	padding-top: 40px;
+	font-family: sterif;
+	font-size: 40px;
+	color: #111;
+	line-height: 50px;
+	text-align: center;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+header .nav-login {
+	float: right;
+	
+}
+
+header .nav-login form {
+	float: left;
+	padding-top: 15px;	
+}
+
+header .nav-login form input {
+	float: left;
+	width: 140px;
+	height: 30px;
+	padding: 0px 10px;
+	margin-right: 10px;
+	border: none;
+	background-color: #ccc;
+	font-family: sterif;
+	font-size: 14px;
+	color: #111;
+	line-height: 30px;
+}
+
+header .nav-login form button {
+	float: left;
+	width: 60px;
+	height: 30px;
+	margin-right: 10px;
+	border: none;
+	background-color: #f3f3f3;
+	font-family: sterif;
+	font-size: 14px;
+	color: #111;
+	cursor: pointer;
+}
+
+header .nav-login a {
+	display: block;
+	width: 60px;
+	height: 60px;
+	border: none;
+	float: left;
+	background-color: #fff;
+	font-family: sterif;
+	font-size: 16px;
+	color: #111;
+	line-height: 63px;
+	cursor: pointer;
+}
+	
+header .nav-login form button:hover {
+	background-color: #ccc;
+}
+
+
+.header-nav {
+	width: 100px;
+	height: 60px;
+	background-color: #fff;
+}
+
+body {
+	background-color:#ccc;
+}
+
+header nav ul {
+	float: left;
+}
+
+header nav li {
+	float: left;
+	list-style: none;
+}
+
+header nav li a {
+	font-family: sterif;
+	font-size: 16px;
+	color: #111;
+	line-height: 63px;
+}
+
+
 /* stylelint-disable selector-list-comma-newline-after */
 
 .blog-header {
@@ -14,9 +123,6 @@
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-}
 
 .display-4 {
   font-size: 2.5rem;
@@ -129,6 +235,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
+
 /*
  *Comment
  */
@@ -139,4 +246,60 @@ h1, h2, h3, h4, h5, h6 {
 .comment img{
 	margin: 5px;
 	float: left;
+}
+
+.signup-container h2 {
+	font-family: serif;
+	font-size: 40px;
+	color: #111;
+	line-height: 50px;
+	text-align: center;
+}
+
+.signup-form {
+	width: 400px;
+	margin: 0 auto;
+	padding-top: 30px;
+	
+	
+	display: block;
+	margin: 0 auto;
+	width:30%;
+	height: 40%;
+	border: none;
+	background-color: #222;
+	font-family: serif;
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.signup-form input{
+	width: 90px;
+	height: 40px;
+	padding: 0px 5%;
+	border: none;
+	margin-bottom:4px;
+	background-color: #fff;
+	font-family: sterif;
+	font-size: 16px;
+	color: #111;
+	line-height: 40px;
+}
+
+.signup-form button{
+	margin: 0 auto;
+	display: block;
+	width: 30px;
+	height: 40px;
+	border: none;
+	background-color: #222;
+	font-family: sterif;
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.signup-form button:hover{
+	background-color: #111;
 }

@@ -37,7 +37,7 @@
 <!-- Title of post links to a new page where you are able to read the whole post & with comment functionality -->		
 			<div class = "blog-post">
 				<h1 class = "blog-post-title"><a href="index.php?category=<?php echo $rows['category_id'] ?>"><?php echo $rows['title']; ?></a></h1>
-				<p class = "blog-post-meta"><?php echo $rows['date']; ?>, by <a href="#"><?php echo $rows['user_id']; ?></a></a></p>
+				<p class = "blog-post-meta"><?php echo $rows['date']; ?>, by <a href="#"><?php echo $rows['username']; ?></a></a></p>
 				<p class="mb-0">
 				
 <!-- Only displays the first 300 charecters of the body --> 				
