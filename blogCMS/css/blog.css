@@ -273,11 +273,10 @@ header nav li a {
 	width: 500px;
 	margin: 0 auto;
 	padding-top: 30px;
-	
-	
+	padding-left:28px;
 	display: block;
 	margin: 0 auto;
-	width:30%;
+	width:25%;
 	height: 40%;
 	border: none;
 	background-color: #222;
@@ -285,12 +284,12 @@ header nav li a {
 	font-size: 16px;
 	color: #fff;
 	cursor: pointer;
+	border-radius: 5px;
 }
 
 .signup-form input{
-	width: 90px;
 	height: 40px;
-	padding: 0px 5%;
+	padding: 0px;
 	border: none;
 	margin-bottom:4px;
 	background-color: #fff;
@@ -298,21 +297,26 @@ header nav li a {
 	font-size: 16px;
 	color: #111;
 	line-height: 40px;
+	border-radius: 2px;
+	text-align:center;
 }
 
 .signup-form button{
-	margin: 0 auto;
+	margin: 10px auto;
+	margin-left:48px;
 	display: block;
 	width: 100px;
 	height: 40px;
 	border: none;
-	background-color: #222;
+	background-color: #B6BAB6;
 	font-family: sterif;
 	font-size: 16px;
-	color: #fff;
+	color: #343434;
 	cursor: pointer;
+	border-radius: 7px;
 }
 
 .signup-form button:hover{
-	background-color: #111;
+	background-color: #5B5D5B;
+
 }
