@@ -1,5 +1,23 @@
 
 /*MY CODE*/
+textarea {
+	width: 40px;
+	height: 80px;
+	background-color: #fff;
+	resize: none;
+}
+
+button {
+	width: 100px;
+	height: 40px;
+	background-color: #282828;
+	border: none;
+	color: #fff;
+	font-family: sterif;
+	font-weight: 400;
+	cursor: pointer;
+}
+
 
 .main-wrapper {
 	margin: 0 auto;
