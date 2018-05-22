@@ -105,7 +105,7 @@ header .nav-login form button:hover {
 }
 
 body {
-	background-color:#6CA6C1;
+	background-color:#B6BAB6;
 }
 
 header nav ul {
@@ -239,10 +239,8 @@ header nav li a {
  */
 .blog-footer {
   padding: 2.5rem 0;
-  color: #999;
+  color: #343434;
   text-align: center;
-  background-color: #f9f9f9;
-  border-top: .05rem solid #e5e5e5;
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
@@ -289,6 +287,7 @@ header nav li a {
 
 .signup-form input{
 	height: 40px;
+	width:198px;
 	padding: 0px;
 	border: none;
 	margin-bottom:4px;
