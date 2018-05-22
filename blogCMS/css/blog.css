@@ -290,7 +290,7 @@ header nav li a {
 .signup-form button{
 	margin: 0 auto;
 	display: block;
-	width: 30px;
+	width: 100px;
 	height: 40px;
 	border: none;
 	background-color: #222;
