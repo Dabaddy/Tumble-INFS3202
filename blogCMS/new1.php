@@ -1,3 +1,7 @@
+<html>
+	<head>
+	<link href="css/blog.css" rel="stylesheet">
+	</head>
 <?php
 
 

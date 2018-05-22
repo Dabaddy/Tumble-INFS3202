@@ -1,3 +1,8 @@
+<html>
+	<head>
+	<link href="css/blog.css" rel="stylesheet">
+	</head>
+
 <?php include("includes/header.php");
 
 //Check if there is a category in the url, if not 

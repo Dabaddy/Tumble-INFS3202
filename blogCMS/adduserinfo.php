@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Add User</title>
+	<link href="css/blog.css" rel="stylesheet">
+	<title>Add User</title>
 </head>
 <body>
 	<form action="http://localhost:1234/blogCMS/useradded.php" method="post">
