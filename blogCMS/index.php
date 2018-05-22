@@ -1,4 +1,6 @@
-<?php include("includes/header.php");
+<?php 
+include("includes/header.php");
+
 
 //Check if there is a category in the url, if not 
 	if(isset($_GET['category'])){
@@ -44,15 +46,24 @@
 				
 <!-- Only displays the first 300 charecters of the body --> 				
 				<?php $body = $rows['body']; 
-					echo substr($body, 0, 300) . "...";				
-				?>
+					echo substr($body, 0, 300) . "...";		
 				
+				?>
 				<a href="<?php echo $rows['post_id'] ?>" class="btn btn-primary">Read More</a>
 				</p>
 			</div>
+			
 	
 	
- 
+		<?php echo "<form method='POST' action='".setComments($db)."'>
+					<br></br>
+					<input type='hidden' name='uid' value='Anon'>
+					<input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
+					<textarea name='message'> </textarea><br></br>
+					<button name='commentSubmit' type='submit'>Comment</button>
+				</form>";
+		
+		?>
 
 		<?php } }
 			else {
