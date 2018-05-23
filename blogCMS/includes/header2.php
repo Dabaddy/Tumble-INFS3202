@@ -38,12 +38,9 @@
           <div class="col-4 pt-1">
             <a class="blog-header-logo text-dark" href="home.php">Tumble</a>
           </div>
-          <div class="col-4 text-center">
-            <a class="blog-header-logo text-dark" href="signup.php">Sign Up</a>
-          </div>
           <div class="col-4 d-flex justify-content-end align-items-center">
             <a class="text-muted" href="#"></a>
-            <a class="btn btn-sm btn-outline-secondary" href="login.php">Log In</a>
+            <a class="btn btn-sm btn-outline-secondary" href="signup.php">Sign up</a>
    		  </div>
         </div>
       </header>

@@ -40,7 +40,7 @@
           </div>
           <div class="col-4 d-flex justify-content-end align-items-center">
             <a class="text-muted" href="#"></a>
-            <a class="btn btn-sm btn-outline-secondary" href="login.php">Log In</a>
+            <a class="btn btn-sm btn-outline-secondary" href="login.php">Log in</a>
    		  </div>
         </div>
       </header>
