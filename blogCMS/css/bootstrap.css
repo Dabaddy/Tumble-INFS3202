@@ -252,6 +252,7 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  padding:30px;
 }
 
 button,
@@ -2278,7 +2279,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 	position:absolute;
     width: auto;
     vertical-align: middle;
-	margin-left: 1305px;
+	margin-left: 1140px;
 	margin-top: -100px;
   }
   .form-inline .form-control-plaintext {
