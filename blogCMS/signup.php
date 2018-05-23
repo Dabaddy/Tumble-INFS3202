@@ -10,6 +10,7 @@
 	<link href="css/reset.css" rel="stylesheet">
  <!-- Custom styles for this template -->
     <link href="css/blog.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
 </head>
 
 <body>

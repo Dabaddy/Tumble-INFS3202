@@ -1,6 +1,7 @@
 <html>
 	<head>
 	<link href="css/blog.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
 	</head>
 <?php 
 include("includes/header.php");
@@ -36,45 +37,6 @@ include("includes/header.php");
 	
 	
     <main role="main" class="container">
-		<div>
-<!-- Grabs all variables of a post and references them to a variable 'rows' -->		
-		<?php if($posts->num_rows > 0) {
-			while($rows = $posts->fetch_assoc()){
-		?>
-<!-- Grab & Display Title, Date, Author & Body of the post -->
-<!-- Title of post links to a new page where you are able to read the whole post & with comment functionality -->		
-			<div class = "blog-post">
-				<h1 class = "blog-post-title"><a href="index.php?category=<?php echo $rows['category_id'] ?>"><?php echo $rows['title']; ?></a></h1>
-				<p class = "blog-post-meta"><?php echo $rows['date']; ?>, by <a href="#"><?php echo $rows['username']; ?></a></a></p>
-				<p class="mb-0">
-				
-<!-- Only displays the first 300 charecters of the body --> 				
-				<?php $body = $rows['body']; 
-					echo substr($body, 0, 300) . "...";		
-				
-				?>
-				<a href="<?php echo $rows['post_id'] ?>" class="btn btn-primary">Read More</a>
-				</p>
-			</div>
-			
-	
-	
-		<?php echo "<form method='POST' action='".setComments($db)."'>
-					<br></br>
-					<input type='hidden' name='uid' value='Anon'>
-					<input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
-					<textarea name='message'> </textarea><br></br>
-					<button name='commentSubmit' type='submit'>Comment</button>
-				</form>";
-		
-		?>
 
-		<?php } }
-			else {
-				echo '<div>ggjhghjgjh</div>';
-			}?>
-		
-		<?php include("includes/footer.php");?>
-	    </div>
 	</main>
 </html>

@@ -1,8 +1,9 @@
 <html>
 	<head>
 	<link href="css/blog.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
 	</head>
-<?php include("includes/header2.php");
+<?php include("includes/header3.php");
 
 //Check if there is a category in the url, if not 
 	if(isset($_GET['category'])){
