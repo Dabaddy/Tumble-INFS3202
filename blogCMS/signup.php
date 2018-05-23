@@ -17,8 +17,6 @@
 	
 </header>
 
-
-
 <section class="main-container">
 	<div class="main-wrapper">
 		<h2>Tumble</h2>
