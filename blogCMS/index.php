@@ -1,8 +1,11 @@
 <html>
 	<head>
-	<link href="css/blog.css" rel="stylesheet">
+	
 	<link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/blog.css" rel="stylesheet">
 	</head>
+	<body>
 <?php 
 include("includes/header.php");
 
@@ -77,5 +80,6 @@ include("includes/header.php");
 		
 		<?php include("includes/footer.php");?>
 	    </div>
+		</body>  
 	</main>
 </html>

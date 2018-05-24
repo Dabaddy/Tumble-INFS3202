@@ -5,6 +5,8 @@ textarea {
 	height: 80px;
 	background-color: #fff;
 	resize: none;
+	
+
 }
 
 button {
@@ -16,16 +18,22 @@ button {
 	font-family: sterif;
 	font-weight: 400;
 	cursor: pointer;
+
+
 }
 
 
 .main-wrapper {
 	margin: 0 auto;
 	width: 1000px;
+	
+
 }
 
 .main-container {
 	padding-top: 40px;
+	
+
 }
 
 .main-container h2 {
@@ -35,21 +43,28 @@ button {
 	color: #111;
 	line-height: 50px;
 	text-align: center;
+	
+
 }
 
 
 a {
 	text-decoration: none;
+
 }
 
 header .nav-login {
 	float: right;
+	
+
 	
 }
 
 header .nav-login form {
 	float: left;
 	padding-top: 15px;	
+	
+
 }
 
 header .nav-login form input {
@@ -64,6 +79,8 @@ header .nav-login form input {
 	font-size: 14px;
 	color: #111;
 	line-height: 30px;
+	
+
 }
 
 header .nav-login form button {
@@ -77,6 +94,8 @@ header .nav-login form button {
 	font-size: 14px;
 	color: #111;
 	cursor: pointer;
+	
+
 }
 
 header .nav-login a {
@@ -91,10 +110,14 @@ header .nav-login a {
 	color: #111;
 	line-height: 63px;
 	cursor: pointer;
+	
+
 }
 	
 header .nav-login form button:hover {
 	background-color: #ccc;
+	
+
 }
 
 
@@ -102,6 +125,8 @@ header .nav-login form button:hover {
 	width: 100px;
 	height: 60px;
 	background-color: #fff;
+	
+
 }
 
 body {
@@ -111,15 +136,22 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+	
+
 }
 
 header nav ul {
 	float: left;
+	
+
+	
 }
 
 header nav li {
 	float: left;
 	list-style: none;
+	
+
 }
 
 header nav li a {
@@ -127,6 +159,9 @@ header nav li a {
 	font-size: 16px;
 	color: #111;
 	line-height: 63px;
+	
+
+	
 }
 
 
@@ -139,66 +174,87 @@ header nav li a {
     text-decoration: none;
     font-size: 30px;
 	font-family: 'Passion One', cursive;
+	
+
 }
 
 .blog-header-logo:hover {
   text-decoration: none;
+ 
+
 }
 
 
 .display-4 {
   font-size: 2.5rem;
+
+
 }
 @media (min-width: 768px) {
   .display-4 {
     font-size: 3rem;
+	
   }
-}
 
 .nav-scroller {
   position: relative;
   z-index: 2;
   height: 2.75rem;
   overflow-y: hidden;
+  
+
+  
 }
 
 .nav-scroller .nav {
   display: block;
     color: white;
-    text-align: center;
+    text-align: right;
     padding: 14px 16px;
     text-decoration: none;
 	list-style-type: none;
     margin: 0;
     padding: 10px;
     background-color: #333;
+
 }
 
 .nav-scroller .nav-link {
   padding-top: .75rem;
   padding-bottom: .75rem;
   font-size: .875rem;
+
+
 }
 
 .card-img-right {
   height: 100%;
   border-radius: 0 3px 3px 0;
+ 
+
 }
 
 .flex-auto {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  
+
 }
 
-.h-250 { height: 250px; }
+.h-250 { height: 250px; 
+ }
 @media (min-width: 768px) {
-  .h-md-250 { height: 250px; }
+  .h-md-250 { height: 250px; 
+ }
 }
 
-.border-top { border-top: 1px solid #e5e5e5; }
-.border-bottom { border-bottom: 1px solid #e5e5e5; }
+.border-top { border-top: 1px solid #e5e5e5; 
+ }
+.border-bottom { border-bottom: 1px solid #e5e5e5; 
+ }
 
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); 
+ }
 
 /*
  * Blog name and description
@@ -207,24 +263,33 @@ header nav li a {
   margin-bottom: 0;
   font-size: 2rem;
   font-weight: 400;
+  
+
 }
 .blog-description {
   font-size: 1.1rem;
   color: #999;
+
+
 }
 
 @media (min-width: 40em) {
   .blog-title {
-    font-size: 3.5rem;
+    font-size: 3.5rem; 
+	
+
   }
 }
 
 /* Pagination */
 .blog-pagination {
   margin-bottom: 4rem;
+
+
 }
 .blog-pagination > .btn {
   border-radius: 2rem;
+  
 }
 
 /*
@@ -232,10 +297,13 @@ header nav li a {
  */
 .blog-post {
   margin-bottom: 4rem;
+  
+
 }
 .blog-post-title {
   margin-bottom: .25rem;
   font-size: 2.5rem;
+  
 }
 .blog-post-meta {
   margin-bottom: 1.25rem;
