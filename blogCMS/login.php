@@ -20,7 +20,6 @@
 
 <section class="main-container">
 	<div class="main-wrapper">
-		<h2 class="blog-header-logo text-dark">Tumble</h2>
 		<form class="signup-form" action="includes/login.inc.php" method="POST">
 			<input type="text" name="username" placeholder="Username">
 			<input type="text" name="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">		

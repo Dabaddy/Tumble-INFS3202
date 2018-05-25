@@ -34,6 +34,7 @@ button {
     margin: 4px 2px;
     cursor: pointer;
 	border-radius: 5px;
+	
 
 .comment-box{
 	width: 775px;
@@ -223,9 +224,11 @@ header nav li a {
     text-align: left;
     text-decoration: none;
     font-size: 30px;
-	font-family: 'Passion One', cursive;
+	font-family: 'Arial, sans-serif	' 'bold';
 	padding-left:-700px;
 	display: inherit !important;
+	    margin-left:-110px;
+
 	
 
 }
@@ -267,7 +270,6 @@ header nav li a {
 	list-style-type: none;
     margin: 0;
     padding: 10px;
-    background-color: #F2F3F2;
 	
 }
 
