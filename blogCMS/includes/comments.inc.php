@@ -7,8 +7,18 @@ function setComments($db) {
 		$message = $_POST['message'];
 		$sql = "INSERT INTO comment (user_id, date, message) VALUES ('$uid', '$date', '$message')";
 		$result = mysqli_query($db, $sql);
-		echo $uid;
-		echo $date;
-		echo $message;
 	}
+}
+
+function getComments($db) {
+	$sql = "SELECT * FROM comment";
+	$result = mysqli_query($db, $sql);
+	while ($row = $result->fetch_assoc()) {
+		echo "<div>";
+			echo $row['user_id']."<br>";
+			echo $row['date']."<br>";
+			echo $row['message']."<br>";
+		echo "</div><br>";
+	}
+		
 }

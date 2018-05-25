@@ -28,7 +28,9 @@ date
 		<textarea name='message'></textarea>
 		<br></br>
 		<button name='commentSubmit' type='submit'>Comment</button>
-	</form>"
+	</form>";
+	
+	getComments($db);
 
 ?>
 
