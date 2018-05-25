@@ -51,31 +51,73 @@ include("includes/header.php");
 				
 <!-- Only displays the first 300 charecters of the body --> 				
 				<?php $body = $rows['body']; 
-					echo substr($body, 0, 300) . "...";		
+					echo substr($body, 0, 20) . "...";		
 				
 				?>
-				<a href="<?php echo $rows['post_id'] ?>" class="btn btn-primary">Read More</a>
+
 				</p>
+				<br>
+				<br>
+				<!-- Trigger the modal with a button -->
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Read More</button>
+
+				<!-- Modal -->
+				<div id="myModal" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="blog-post-title"><?php echo $rows['title']; ?></h4>
+					</div>
+					<div class="modal-body">
+						<p><?php echo $rows['date']; ?>, by <?php echo $rows['username']; ?></p>
+					</div>
+					<div class="modal-body">
+						<p><?php echo $rows['body'];?></p>
+					</div>
+					<br>
+					<br>
+					<div class="modal-footer">
+					
+					
+					
+					
+					
+					</div>
+
+					<div class="modal-footer">
+					<?php echo "<form method='POST' action='".setComments($db)."'>
+						<br></br>
+						<input type='hidden' name='uid' value='Anon'>
+						<input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
+						<textarea name='message'> </textarea>
+						<br></br>
+						<button name='commentSubmit' type='submit1'>Comment</button>
+					</form>";
+					?>
+					
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+					</div>
+				</div>
+			
+			
+				</div>
 			</div>
 			
-	
-	
-		<?php echo "<form method='POST' action='".setComments($db)."'>
-					<br></br>
-					<input type='hidden' name='uid' value='Anon'>
-					<input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
-					<textarea name='message'> </textarea><br></br>
-					<button name='commentSubmit' type='submit'>Comment</button>
-				</form>";
-		
-		?>
+			
 
 		<?php } }
 			else {
 				echo '<div>ggjhghjgjh</div>';
 			}?>
 		
-		<?php include("includes/footer.php");?>
+		
 	    </div>
+
+		<?php include("includes/footer.php");?>
+		
 	</main>
 </html>

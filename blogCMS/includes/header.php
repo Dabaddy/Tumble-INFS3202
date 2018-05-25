@@ -3,7 +3,6 @@
 
 	include ("config.php");
 	include ("db.php");
-	include ("comments.inc.php");
 	
 	date_default_timezone_set('Australia/Brisbane');
 	
