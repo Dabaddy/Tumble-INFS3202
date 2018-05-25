@@ -2,7 +2,13 @@
 	include('includes/dbh.inc.php');
 	date_default_timezone_set('Australia/Brisbane');
 	include('includes/comments.inc.php');
-
+	include_once('geoplugin.class.php');
+	$geoplugin = new geoPlugin();
+	$geoplugin->locate();
+	$geoplugin->city;
+	$geoplugin->countryName;
+	$geoplugin->latitude;
+	$geoplugin->longitude;
 ?>
 
 
@@ -57,13 +63,13 @@ include("includes/header.php");
 
   
   <body>
-    <h3>My Google Maps Demo</h3>
+    <h3>Location: <?php echo $geoplugin->city;?>(<?php echo $geoplugin->countryName;?>)</h3>
     <div id="map"></div>
     <script>
       function initMap() {
-        var location = {lat: -27.4954, lng: 153.0120};
+        var location = {lat: <?php echo $geoplugin->latitude;?>, lng: <?php echo $geoplugin->longitude;?>};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 5,
           center: location
         });
         var marker = new google.maps.Marker({
