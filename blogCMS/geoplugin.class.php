@@ -78,7 +78,7 @@ zh-CN
 		
 		if ( is_null( $ip ) ) {
 			$ip = $_SERVER['REMOTE_ADDR'];
-			//$ip = '45.112.125.43';
+
 		}
 		
 		$host = str_replace( '{IP}', $ip, $this->host );
