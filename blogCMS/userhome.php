@@ -69,7 +69,7 @@ include("includes/header.php");
       function initMap() {
         var location = {lat: <?php echo $geoplugin->latitude;?>, lng: <?php echo $geoplugin->longitude;?>};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 5,
+          zoom: 4,
           center: location
         });
         var marker = new google.maps.Marker({
