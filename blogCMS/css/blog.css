@@ -169,6 +169,7 @@ header nav li a {
 	font-size: 16px;
 	color: #111;
 	line-height: 63px;
+	padding-right: 50px;
 	
 
 	
@@ -180,10 +181,12 @@ header nav li a {
 .blog-header-logo {
     border: none;
     color:#0C0E10;
-    text-align: right;
+    text-align: left;
     text-decoration: none;
     font-size: 30px;
 	font-family: 'Passion One', cursive;
+	padding-left:-700px;
+	display: inherit !important;
 	
 
 }
@@ -225,9 +228,8 @@ header nav li a {
 	list-style-type: none;
     margin: 0;
     padding: 10px;
-    background-color: #333533;
+    background-color: #F2F3F2;
 	
-
 }
 
 .nav-scroller .nav-link {

@@ -1,5 +1,17 @@
+<?php
+	include('includes/dbh.inc.php');
+	date_default_timezone_set('Australia/Brisbane');
+	include('includes/comments.inc.php');
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html>
+
+<meta charset="UTF-8">
   <head>
   	
 	<link href="css/blog.css" rel="stylesheet">
@@ -15,6 +27,7 @@
   
 <?php 
 include("includes/header.php");
+
 
 
 //Check if there is a category in the url, if not 
@@ -62,7 +75,37 @@ include("includes/header.php");
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK6m5423mkMlscF_dfW_6xTlkglZBzlE4&callback=initMap">
     </script>
+	<br>
+	<br>
+	
+	<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">View Comments</button>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Maps Comments</h4>
+      </div>
+	  <div class="modal-footer">
+	  <form action="insertcomment.php" method="POST">
+		<br>
+		  <button formaction="test.php" class="btn btn-default" >Place Comment</button>
+	  </div>
+      <div class="modal-body">
+		<?php getComments($db); ?>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+	
   </body>
+  
   <?php include("includes/footer.php");?>
 
 </html>
