@@ -65,7 +65,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  text-align: left;
+  text-align: center;
   background-color: #fff;
 }
 
@@ -161,10 +161,11 @@ sup {
 }
 
 a {
-  color: #F7FFF7;
+  color: #0C0E10;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-align:center;
 }
 
 a:hover {
@@ -252,7 +253,10 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  padding:30px;
+  padding:20px;
+        top: 50%;
+
+  
 }
 
 button,
@@ -270,6 +274,7 @@ html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+
 }
 
 button::-moz-focus-inner,
