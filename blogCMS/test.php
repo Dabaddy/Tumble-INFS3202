@@ -14,6 +14,9 @@ date
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="css/blog.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+</head>
 <meta charset="UTF-8">
 <title> </title>
 

@@ -62,7 +62,7 @@ include("includes/header.php");
 				<br>
 				<br>
 				<!-- Trigger the modal with a button -->
-				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Read More</button>
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Read More</button>
 
 				<!-- Modal -->
 				<div id="myModal" class="modal fade" role="dialog">
