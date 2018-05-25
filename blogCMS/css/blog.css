@@ -8,8 +8,8 @@ map {
 }
 
 textarea {
-	width: 100px;
-	height: 80px;
+	width: 800px;
+	height: 100px;
 	background-color: #fff;
 	resize: none;
 }
@@ -23,6 +23,40 @@ button {
 	font-family: sterif;
 	font-weight: 400;
 	cursor: pointer;
+}
+
+.comment-box{
+	width: 775px;
+	padding: 20px;
+	margin-bottom: 4px;
+	background-color: #fff;
+	border-radius: 4px;
+	position: relative;
+}
+
+.comment-box p {
+	font-family: sterif;
+	font-size:14px;
+	line-height: #282828;
+	font-weight: 100px;
+}
+
+.edit-form{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.edit-form button{
+	width: 40px;
+	height: 20px;
+	color: #282828;
+	background-color: #fff;
+	opacity: 0.7;
+}
+
+.edit-form button:hover{
+	opacity: 1;
 }
 
 
